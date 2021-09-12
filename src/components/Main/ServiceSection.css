@@ -1,0 +1,82 @@
+.services {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: max-content;
+    margin: 50px auto 0 auto;
+    justify-content: flex-end;
+    background-image: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+
+.service-text {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right,rgba(255,255,255, 0), rgba(255,255,255, 0.3) 20%, rgba(255,255,255, 0.8) 70%, rgba(255,255,255,1) 90%);
+    width: 50%;
+    padding: 40px 60px 40px 150px;
+
+}
+
+.service-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: .40em;
+}
+
+.service-desc {
+    font-size: 18px;
+}
+
+.service-CTA {
+    text-align: end;
+}
+
+.service-CTA button {
+    background-color: rgba(4, 67, 137, .7);
+    color: white;
+    width: 7.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+    font-size: 24px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    transition: width 300ms ease-in-out;
+}
+
+.service-CTA button:hover {
+    width: 9em;
+}
+
+.service-CTA button .arrow {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .service-text {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .service-text {
+        width: 100%;
+        padding: 40px 60px;
+        background-image: linear-gradient( rgba(255,255,255, 0.5), rgba(255,255,255, 0.5));
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .services {
+        width: 90%;
+    }
+    .service-text {
+        padding: 20px 30px;
+    }
+}

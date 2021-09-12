@@ -1,0 +1,17 @@
+.footer {
+    height: fit-content;
+    background-color: #044289;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.foot-text h2 {
+    font-size: 48px;
+}
+
+.foot-text small {
+    font-size: 14px;
+}

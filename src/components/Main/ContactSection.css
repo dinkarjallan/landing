@@ -1,0 +1,105 @@
+.contact {
+    background-color: #044289;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.contact-info, .contact-form {
+    width: 40%;
+    height: fit-content;
+    color: #fff;
+}
+
+.info-heading , .form-heading {
+    font-size: 38px;
+    margin-bottom: .40em;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-item p {
+    margin: 10px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.info-item span {
+    display: inline-block;
+    padding: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(100%)
+}
+
+.info-item .mail {
+    background-image: url('https://image.flaticon.com/icons/png/128/725/725643.png'); 
+}
+.info-item .location {
+    background-image: url('https://image.flaticon.com/icons/png/128/2948/2948253.png');
+}
+.info-item .phone {
+    background-image: url('https://image.flaticon.com/icons/png/128/483/483947.png');
+}
+
+form {
+    margin-bottom: 2em;
+}
+
+form .form-input input {
+    width: 60%;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255, 0.3);
+    outline: none;
+    color: #fff;
+    caret-color: #fff;
+    transition: border 300ms ease-in-out;
+}
+
+form .form-input input:focus {
+    border-bottom: 2px solid #fff;
+}
+
+form .form-input label {
+    font-size: 12px;
+}
+
+.contact-form button {
+    color: #044289;
+    background-color: white;
+    width: 7.1em;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    outline: none;
+    transition: all 200ms ease-in-out;
+}
+
+.contact-form button:hover, .contact-form button:active {
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-form, .contact-info {
+        width: 80%;
+    }
+}

@@ -1,0 +1,70 @@
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.head-title {
+    font-size: 48px;
+    margin: 0;
+    color: #d6d6d6;
+}
+
+.head-desc {
+    font-size: 24px;
+    color: #d6d6d6;
+}
+
+.head-CTA {
+    text-align: end;
+}
+
+.head-CTA button {
+    background-color: rgba(4, 67, 137, .7);
+    color: white;
+    width: 6em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+    font-size: 24px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    transition: width 300ms ease-in-out;
+}
+
+.head-CTA button:hover {
+    width: 8em;
+}
+
+.head-CTA button .arrow {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .head-title {
+        display: none;
+    }
+    .head-desc {
+        font-size: 20px;
+    }
+}
