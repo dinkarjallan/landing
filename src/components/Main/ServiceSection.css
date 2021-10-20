@@ -51,6 +51,7 @@
 
 .service-CTA button:hover {
     width: 9em;
+    cursor: pointer;
 }
 
 .service-CTA button .arrow {
@@ -70,6 +71,13 @@
         padding: 40px 60px;
         background-image: linear-gradient( rgba(255,255,255, 0.5), rgba(255,255,255, 0.5));
     }
+    .service-CTA button .arrow {
+    display: none;
+    }
+    .service-CTA button:hover {
+        width: 7.1em;
+        cursor: pointer;
+    }
 }
 
 @media only screen and (max-width: 475px) {
@@ -79,4 +87,5 @@
     .service-text {
         padding: 20px 30px;
     }
+    
 }

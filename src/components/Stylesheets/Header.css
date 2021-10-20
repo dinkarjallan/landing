@@ -47,6 +47,7 @@
 
 .head-CTA button:hover {
     width: 8em;
+    cursor: pointer;
 }
 
 .head-CTA button .arrow {
@@ -57,6 +58,13 @@
 @media only screen and (max-width: 768px) {
     .container {
         width: 90%;
+    }
+    .head-CTA button .arrow {
+        display: none;
+    }
+    .head-CTA button:hover {
+        width: 6em;
+        cursor: pointer;
     }
 }
 
